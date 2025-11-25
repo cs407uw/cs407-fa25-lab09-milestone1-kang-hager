@@ -42,9 +42,7 @@ class BallViewModel : ViewModel() {
                 return
             }
 
-            // Raw values point opposite gravity; also convert to screen coords.
-            // Screen coords: +x right, +y down.
-            val scale = 400f  // make motion visible; tune 200–600 if desired
+            val scale = 400f
             val ax = -event.values[0] * scale
             val ay = event.values[1] * scale
 
